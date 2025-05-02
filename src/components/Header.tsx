@@ -18,17 +18,24 @@ const Header: React.FC = () => {
           <Link to="/about" className="text-gray-600 hover:text-purple-600 px-3 py-2 rounded-md">
             О программе
           </Link>
+          <Link to="/pricing" className="text-gray-600 hover:text-purple-600 px-3 py-2 rounded-md">
+            Тарифы
+          </Link>
           <Link to="/faq" className="text-gray-600 hover:text-purple-600 px-3 py-2 rounded-md">
             Вопросы и ответы
           </Link>
         </nav>
         <div className="flex items-center space-x-2">
-          <Button variant="ghost" size="icon">
-            <Icon name="User" className="h-5 w-5" />
-          </Button>
-          <Button className="bg-purple-600 hover:bg-purple-700">
-            Войти
-          </Button>
+          <Link to="/login">
+            <Button variant="ghost" className="text-gray-600">
+              Войти
+            </Button>
+          </Link>
+          <Link to="/register">
+            <Button className="bg-purple-600 hover:bg-purple-700">
+              Регистрация
+            </Button>
+          </Link>
         </div>
       </div>
     </header>
